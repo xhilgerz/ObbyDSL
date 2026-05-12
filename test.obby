@@ -1,0 +1,28 @@
+project "Test" {
+folder "Stage1" {
+part "StartPlatform" {
+size: 20 1 20
+color: 0.4 0.8 0.4
+material: SmoothPlastic
+anchored: true
+}
+checkpoint "CP1" {
+size: 4 6 4
+}
+}
+folder "Stage2" {
+kill_brick "LavaTile" {
+size: 4 1 4
+color: 1 0.2 0
+}
+moving_platform "Swinger" {
+size: 8 1 4
+speed: 3
+distance: 10
+}
+checkpoint "CP2" {
+size: 4 6 4
+}
+}
+}
+
